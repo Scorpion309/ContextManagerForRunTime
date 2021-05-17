@@ -10,8 +10,7 @@ class RunTime:
         return self.start
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        self.stop = datetime.now()
-        print(self.stop - self.start)
+        print(datetime.now() - self.start)
 
 
 if __name__ == '__main__':
